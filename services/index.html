@@ -1,1 +1,605 @@
-<!-- placeholder -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technolojea — Premium Service Menu | 109 Services</title>
+<meta name="description" content="109 premium services: SEO, audits, websites, video, voiceover, design & office solutions. 100% real work — no fake subs/views.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d4af37;--gold-lt:#e8d9a0;--bg:#0a0a0c;--panel:#121214;--line:rgba(212,175,55,.22);--txt:#f2f2f2;--mut:#a8a8a8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;line-height:1.6}
+h1,h2,.serif{font-family:'Playfair Display',serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:26px;padding:14px 22px;max-width:1180px;margin:0 auto}
+.brand{font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--gold);letter-spacing:2px;white-space:nowrap;text-decoration:none}
+.nav-links{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:12.5px;padding:8px 10px;white-space:nowrap;border-radius:6px}
+.nav-links a:hover{color:var(--gold);background:rgba(212,175,55,.08)}
+/* HERO */
+.hero{text-align:center;padding:96px 22px 70px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 0%,rgba(212,175,55,.10),transparent 70%)}
+.dia{width:14px;height:14px;background:var(--gold);transform:rotate(45deg);margin:0 auto 26px}
+.kicker{color:var(--gold);letter-spacing:6px;font-size:12px;font-weight:600}
+.hero h1{font-size:clamp(38px,6vw,68px);font-weight:800;line-height:1.15;margin:18px 0 6px}
+.hero h1 .g{color:var(--gold)}
+.hero p.sub{color:var(--mut);font-size:clamp(15px,2.4vw,19px);max-width:640px;margin:14px auto 0}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.badges span{border:1px solid var(--line);color:var(--gold-lt);font-size:11.5px;letter-spacing:1.5px;padding:9px 18px;border-radius:30px}
+.cta{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 34px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.2s}
+.btn-gold{background:var(--gold);color:#111}
+.btn-gold:hover{background:#e5c04a;transform:translateY(-2px)}
+.btn-out{border:1px solid var(--gold);color:var(--gold)}
+.btn-out:hover{background:rgba(212,175,55,.1)}
+.stats{display:flex;gap:44px;justify-content:center;margin-top:52px;flex-wrap:wrap}
+.stats div{text-align:center}
+.stats b{font-family:'Playfair Display',serif;font-size:34px;color:var(--gold);display:block}
+.stats span{color:var(--mut);font-size:13px;letter-spacing:1px}
+/* SEARCH */
+.searchbar{position:sticky;top:61px;z-index:40;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);padding:14px 22px;border-bottom:1px solid var(--line)}
+.searchbar .wrap{display:flex;gap:12px;align-items:center}
+#q{flex:1;background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:13px 18px;border-radius:10px;font-size:15px;font-family:'Inter'}
+#q:focus{outline:none;border-color:var(--gold)}
+#cnt{color:var(--mut);font-size:13px;white-space:nowrap}
+/* SECTIONS */
+.cat{padding:64px 0 10px}
+.cat-head{display:flex;gap:22px;align-items:flex-start;margin-bottom:28px;position:relative}
+.ghost{font-family:'Playfair Display',serif;font-size:76px;font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.4);line-height:1}
+.cat-head h2{font-size:clamp(24px,3.6vw,34px);color:#fff}
+.cat-head .kicker{font-size:11px}
+.count{display:inline-block;margin-top:8px;font-size:12px;color:#111;background:var(--gold);padding:3px 12px;border-radius:20px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{display:flex;gap:14px;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-left:3px solid var(--gold);border-radius:10px;padding:16px 18px;transition:.18s}
+.card:hover{transform:translateY(-3px);border-color:var(--line);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.card .num{flex:none;width:34px;height:34px;border-radius:50%;background:rgba(212,175,55,.14);color:var(--gold);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.card h3{font-size:15px;font-weight:600;color:#fff}
+.card p{font-size:13px;color:var(--mut);margin-top:2px}
+.card.hide{display:none}
+.nohit{text-align:center;color:var(--mut);padding:40px;display:none}
+/* PRODUCT */
+.product{margin:80px 0 20px;border:1px solid var(--gold);border-radius:16px;padding:54px 30px;text-align:center;background:linear-gradient(180deg,rgba(212,175,55,.07),transparent);position:relative}
+.product .kicker{margin-bottom:14px;display:block}
+.product h2{font-size:clamp(26px,4vw,40px)}
+.product h2 .g{color:var(--gold)}
+.product p{color:var(--mut);max-width:560px;margin:14px auto 26px}
+/* STEPS */
+.steps{padding:70px 0 20px;text-align:center}
+.steps h2{font-size:clamp(26px,4vw,38px);margin-bottom:36px}
+.steps h2 .g{color:var(--gold)}
+.step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;text-align:left}
+.step{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:26px}
+.step b{font-family:'Playfair Display',serif;font-size:30px;color:var(--gold)}
+.step h3{margin:10px 0 6px;font-size:16px}
+.step p{color:var(--mut);font-size:13.5px}
+/* CONTACT */
+.contact{text-align:center;padding:80px 22px;border-top:1px solid var(--line);margin-top:60px}
+.contact h2{font-size:clamp(28px,4.5vw,44px)}
+.contact h2 .g{color:var(--gold)}
+.contact .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:30px 0}
+.cbox{border:1px solid var(--line);border-radius:12px;padding:20px 34px;background:var(--panel)}
+.cbox small{color:var(--mut);letter-spacing:3px;font-size:11px;display:block;margin-bottom:6px}
+.cbox a{color:#fff;font-size:19px;font-weight:600;text-decoration:none}
+.cbox a:hover{color:var(--gold)}
+.trust{color:var(--gold-lt);font-size:14px;margin-top:8px}
+footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px solid rgba(255,255,255,.06)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{0%{opacity:0;transform:rotate(45deg) scale(.4)}70%{transform:rotate(45deg) scale(1.15)}100%{opacity:1;transform:rotate(45deg) scale(1)}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 0 rgba(212,175,55,0)}50%{box-shadow:0 0 26px rgba(212,175,55,.35)}}
+.hero .dia{animation:pop .7s ease both}
+.hero .kicker{animation:fadeUp .7s .15s ease both}
+.hero h1{animation:fadeUp .8s .3s ease both}
+.hero p.sub{animation:fadeUp .8s .45s ease both}
+.badges span{animation:fadeUp .6s ease both}
+.badges span:nth-child(1){animation-delay:.55s}.badges span:nth-child(2){animation-delay:.65s}.badges span:nth-child(3){animation-delay:.75s}
+.cta{animation:fadeUp .7s .85s ease both}
+.stats{animation:fadeIn 1s 1s ease both}
+.btn-gold{animation:glowPulse 3s 2s infinite}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 14px 34px rgba(0,0,0,.5),0 0 18px rgba(212,175,55,.12)}
+.ghost{transition:all .4s ease}
+.cat-head:hover .ghost{-webkit-text-stroke:1px rgba(212,175,55,.85)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:640px){.nav-links{display:none}.hero{padding:70px 18px 50px}}
+</style></head>
+<body>
+<nav><div class="nav-in">
+<a class="brand" href="#top">TECHNOLOJEA</a>
+<div class="nav-links"><a href="#cat-01">Branding & Seo</a>
+<a href="#cat-02">Seo</a>
+<a href="#cat-03">Audit & Strategy</a>
+<a href="#cat-04">Website & Online</a>
+<a href="#cat-05">Full Packages</a>
+<a href="#cat-06">Document Services</a>
+<a href="#cat-07">Business Design</a>
+<a href="#cat-08">Word / Excel / Ppt</a>
+<a href="#cat-09">Photo Services</a>
+<a href="#cat-10">Video Editing</a>
+<a href="#cat-11">Voiceover</a>
+<a href="#cat-12">Faceless Youtube Video</a>
+<a href="#cat-13">Shorts / Reels</a>
+<a href="#cat-14">Thumbnail Design</a>
+</div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div class="dia"></div>
+<span class="kicker">PREMIUM SERVICE MENU</span>
+<h1>We Do the Work.<br><span class="g">You Get the Results.</span></h1>
+<p class="sub">109 premium services under one roof — SEO, audits &amp; strategy, websites, video production, voiceover, design &amp; office solutions.</p>
+<div class="badges"><span>SAVE TIME</span><span>LOOK PROFESSIONAL</span><span>GROW FASTER</span></div>
+<div class="cta">
+<a class="btn btn-gold" href="https://wa.me/971562963390" target="_blank" rel="noopener">WhatsApp Us</a>
+<a class="btn btn-out" href="mailto:technolojea@gmail.com">technolojea@gmail.com</a>
+</div>
+<div class="stats">
+<div><b>109</b><span>PREMIUM SERVICES</span></div>
+<div><b>14</b><span>CATEGORIES</span></div>
+<div><b>100%</b><span>REAL WORK</span></div>
+</div></div></header>
+
+<div class="searchbar"><div class="wrap">
+<input id="q" type="search" placeholder="Search 109 services…  (e.g. SEO, thumbnail, CV)" autocomplete="off">
+<span id="cnt"></span>
+</div></div>
+
+<main class="wrap">
+<section class="cat" id="cat-01">
+<div class="cat-head reveal"><span class="ghost">01</span>
+<div><span class="kicker">CATEGORY 01</span><h2>BRANDING & SEO</h2>
+<span class="count">9 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="banner + logo design complete channel identity">
+<span class="num">1</span>
+<div><h3>Banner + Logo Design</h3><p>Complete channel identity</p></div></div>
+<div class="card" data-search="seo pack (10 videos) titles, tags, descriptions that rank">
+<span class="num">2</span>
+<div><h3>SEO Pack (10 Videos)</h3><p>Titles, tags, descriptions that rank</p></div></div>
+<div class="card" data-search="subtitles (per video) urdu / english captions">
+<span class="num">3</span>
+<div><h3>Subtitles (per Video)</h3><p>Urdu / English captions</p></div></div>
+<div class="card" data-search="channel seo setup about, playlists, keywords, end screens">
+<span class="num">4</span>
+<div><h3>Channel SEO Setup</h3><p>About, playlists, keywords, end screens</p></div></div>
+<div class="card" data-search="google business profile setup get found on google maps">
+<span class="num">5</span>
+<div><h3>Google Business Profile Setup</h3><p>Get found on Google Maps</p></div></div>
+<div class="card" data-search="whatsapp business catalog your shop, on whatsapp">
+<span class="num">6</span>
+<div><h3>WhatsApp Business Catalog</h3><p>Your shop, on WhatsApp</p></div></div>
+<div class="card" data-search="fb / ig page setup + branding branded social media presence">
+<span class="num">7</span>
+<div><h3>FB / IG Page Setup + Branding</h3><p>Branded social media presence</p></div></div>
+<div class="card" data-search="social media branding kit profile, cover and post templates">
+<span class="num">8</span>
+<div><h3>Social Media Branding Kit</h3><p>Profile, cover and post templates</p></div></div>
+<div class="card" data-search="hashtag research pack reach-boosting hashtag sets">
+<span class="num">9</span>
+<div><h3>Hashtag Research Pack</h3><p>Reach-boosting hashtag sets</p></div></div>
+</div></section>
+<section class="cat" id="cat-02">
+<div class="cat-head reveal"><span class="ghost">02</span>
+<div><span class="kicker">CATEGORY 02</span><h2>SEO</h2>
+<span class="count">8 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="website on-page seo (10 pages) 10 pages fully optimized">
+<span class="num">10</span>
+<div><h3>Website On-Page SEO (10 Pages)</h3><p>10 pages fully optimized</p></div></div>
+<div class="card" data-search="keyword research report rank-ready keyword report">
+<span class="num">11</span>
+<div><h3>Keyword Research Report</h3><p>Rank-ready keyword report</p></div></div>
+<div class="card" data-search="youtube keyword research keywords that rank videos">
+<span class="num">12</span>
+<div><h3>YouTube Keyword Research</h3><p>Keywords that rank videos</p></div></div>
+<div class="card" data-search="local seo / maps ranking dominate google maps in your area">
+<span class="num">13</span>
+<div><h3>Local SEO / Maps Ranking</h3><p>Dominate Google Maps in your area</p></div></div>
+<div class="card" data-search="blog article seo (per article) per-article search optimization">
+<span class="num">14</span>
+<div><h3>Blog Article SEO (per Article)</h3><p>Per-article search optimization</p></div></div>
+<div class="card" data-search="meta titles + descriptions (10 pages) 10 pages, done right">
+<span class="num">15</span>
+<div><h3>Meta Titles + Descriptions (10 Pages)</h3><p>10 pages, done right</p></div></div>
+<div class="card" data-search="backlink analysis report know your complete link profile">
+<span class="num">16</span>
+<div><h3>Backlink Analysis Report</h3><p>Know your complete link profile</p></div></div>
+<div class="card" data-search="seo competitor gap report find where competitors beat you">
+<span class="num">17</span>
+<div><h3>SEO Competitor Gap Report</h3><p>Find where competitors beat you</p></div></div>
+</div></section>
+<section class="cat" id="cat-03">
+<div class="cat-head reveal"><span class="ghost">03</span>
+<div><span class="kicker">CATEGORY 03</span><h2>AUDIT & STRATEGY</h2>
+<span class="count">15 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="youtube deep audit full channel health pdf report">
+<span class="num">18</span>
+<div><h3>YouTube Deep Audit</h3><p>Full channel health PDF report</p></div></div>
+<div class="card" data-search="website deep audit speed, seo, mobile, security, content">
+<span class="num">19</span>
+<div><h3>Website Deep Audit</h3><p>Speed, SEO, mobile, security, content</p></div></div>
+<div class="card" data-search="competitor analysis what rivals do right, where you win">
+<span class="num">20</span>
+<div><h3>Competitor Analysis</h3><p>What rivals do right, where you win</p></div></div>
+<div class="card" data-search="30-day content plan ideas, titles and posting schedule">
+<span class="num">21</span>
+<div><h3>30-Day Content Plan</h3><p>Ideas, titles and posting schedule</p></div></div>
+<div class="card" data-search="fb / ig page audit complete social presence review">
+<span class="num">22</span>
+<div><h3>FB / IG Page Audit</h3><p>Complete social presence review</p></div></div>
+<div class="card" data-search="tiktok audit profile and content review">
+<span class="num">23</span>
+<div><h3>TikTok Audit</h3><p>Profile and content review</p></div></div>
+<div class="card" data-search="video content audit quality and retention analysis">
+<span class="num">24</span>
+<div><h3>Video Content Audit</h3><p>Quality and retention analysis</p></div></div>
+<div class="card" data-search="strategy call (30 min) 30 minutes of expert guidance">
+<span class="num">25</span>
+<div><h3>Strategy Call (30 min)</h3><p>30 minutes of expert guidance</p></div></div>
+<div class="card" data-search="website speed audit make your site load like lightning">
+<span class="num">26</span>
+<div><h3>Website Speed Audit</h3><p>Make your site load like lightning</p></div></div>
+<div class="card" data-search="website security audit find vulnerabilities before hackers do">
+<span class="num">27</span>
+<div><h3>Website Security Audit</h3><p>Find vulnerabilities before hackers do</p></div></div>
+<div class="card" data-search="e-commerce store audit conversion-focused store review">
+<span class="num">28</span>
+<div><h3>E-commerce Store Audit</h3><p>Conversion-focused store review</p></div></div>
+<div class="card" data-search="social media 90-day strategy quarterly growth roadmap">
+<span class="num">29</span>
+<div><h3>Social Media 90-Day Strategy</h3><p>Quarterly growth roadmap</p></div></div>
+<div class="card" data-search="brand audit identity and consistency check">
+<span class="num">30</span>
+<div><h3>Brand Audit</h3><p>Identity and consistency check</p></div></div>
+<div class="card" data-search="fb / google ads account audit stop wasting your ad spend">
+<span class="num">31</span>
+<div><h3>FB / Google Ads Account Audit</h3><p>Stop wasting your ad spend</p></div></div>
+<div class="card" data-search="email marketing audit newsletter performance review">
+<span class="num">32</span>
+<div><h3>Email Marketing Audit</h3><p>Newsletter performance review</p></div></div>
+</div></section>
+<section class="cat" id="cat-04">
+<div class="cat-head reveal"><span class="ghost">04</span>
+<div><span class="kicker">CATEGORY 04</span><h2>WEBSITE & ONLINE</h2>
+<span class="count">13 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="landing page one-page conversion machine">
+<span class="num">33</span>
+<div><h3>Landing Page</h3><p>One-page conversion machine</p></div></div>
+<div class="card" data-search="product listing writing ebay / amazon copy that sells">
+<span class="num">34</span>
+<div><h3>Product Listing Writing</h3><p>eBay / Amazon copy that sells</p></div></div>
+<div class="card" data-search="fb / ig monthly management monthly posting, fully handled">
+<span class="num">35</span>
+<div><h3>FB / IG Monthly Management</h3><p>Monthly posting, fully handled</p></div></div>
+<div class="card" data-search="restaurant qr menu modern contactless menus">
+<span class="num">36</span>
+<div><h3>Restaurant QR Menu</h3><p>Modern contactless menus</p></div></div>
+<div class="card" data-search="business email setup you@yourbusiness.com">
+<span class="num">37</span>
+<div><h3>Business Email Setup</h3><p>you@yourbusiness.com</p></div></div>
+<div class="card" data-search="full 5-page website complete business website">
+<span class="num">38</span>
+<div><h3>Full 5-Page Website</h3><p>Complete business website</p></div></div>
+<div class="card" data-search="website maintenance monthly care, updates and backups">
+<span class="num">39</span>
+<div><h3>Website Maintenance</h3><p>Monthly care, updates and backups</p></div></div>
+<div class="card" data-search="online store setup start selling online fast">
+<span class="num">40</span>
+<div><h3>Online Store Setup</h3><p>Start selling online fast</p></div></div>
+<div class="card" data-search="domain + hosting setup your address on the internet">
+<span class="num">41</span>
+<div><h3>Domain + Hosting Setup</h3><p>Your address on the internet</p></div></div>
+<div class="card" data-search="whatsapp catalog + auto-reply catalog plus smart replies">
+<span class="num">42</span>
+<div><h3>WhatsApp Catalog + Auto-Reply</h3><p>Catalog plus smart replies</p></div></div>
+<div class="card" data-search="google maps review strategy build a 5-star reputation">
+<span class="num">43</span>
+<div><h3>Google Maps Review Strategy</h3><p>Build a 5-star reputation</p></div></div>
+<div class="card" data-search="business blog setup content-ready company blog">
+<span class="num">44</span>
+<div><h3>Business Blog Setup</h3><p>Content-ready company blog</p></div></div>
+<div class="card" data-search="website backup & restore never lose your website">
+<span class="num">45</span>
+<div><h3>Website Backup & Restore</h3><p>Never lose your website</p></div></div>
+</div></section>
+<section class="cat" id="cat-05">
+<div class="cat-head reveal"><span class="ghost">05</span>
+<div><span class="kicker">CATEGORY 05</span><h2>FULL PACKAGES</h2>
+<span class="count">2 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="channel launch pack setup + 5 videos + seo + branding">
+<span class="num">46</span>
+<div><h3>Channel Launch Pack</h3><p>Setup + 5 videos + SEO + branding</p></div></div>
+<div class="card" data-search="monthly growth pack videos, shorts, thumbnails, seo, audits">
+<span class="num">47</span>
+<div><h3>Monthly Growth Pack</h3><p>Videos, shorts, thumbnails, SEO, audits</p></div></div>
+</div></section>
+<section class="cat" id="cat-06">
+<div class="cat-head reveal"><span class="ghost">06</span>
+<div><span class="kicker">CATEGORY 06</span><h2>DOCUMENT SERVICES</h2>
+<span class="count">15 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="cv design modern professional layout">
+<span class="num">48</span>
+<div><h3>CV Design</h3><p>Modern professional layout</p></div></div>
+<div class="card" data-search="cv writing + design compelling words, beautiful design">
+<span class="num">49</span>
+<div><h3>CV Writing + Design</h3><p>Compelling words, beautiful design</p></div></div>
+<div class="card" data-search="cover letter application letter that gets read">
+<span class="num">50</span>
+<div><h3>Cover Letter</h3><p>Application letter that gets read</p></div></div>
+<div class="card" data-search="translation (per page) accurate urdu-english translation">
+<span class="num">51</span>
+<div><h3>Translation (per Page)</h3><p>Accurate Urdu-English translation</p></div></div>
+<div class="card" data-search="pdf edit / convert fix, convert and clean pdfs">
+<span class="num">52</span>
+<div><h3>PDF Edit / Convert</h3><p>Fix, convert and clean PDFs</p></div></div>
+<div class="card" data-search="linkedin profile writing recruiter-ready profile">
+<span class="num">53</span>
+<div><h3>LinkedIn Profile Writing</h3><p>Recruiter-ready profile</p></div></div>
+<div class="card" data-search="job application package cv + cover letter + linkedin">
+<span class="num">54</span>
+<div><h3>Job Application Package</h3><p>CV + cover letter + LinkedIn</p></div></div>
+<div class="card" data-search="experience letter drafting professionally drafted">
+<span class="num">55</span>
+<div><h3>Experience Letter Drafting</h3><p>Professionally drafted</p></div></div>
+<div class="card" data-search="salary certificate official format">
+<span class="num">56</span>
+<div><h3>Salary Certificate</h3><p>Official format</p></div></div>
+<div class="card" data-search="affidavit / undertaking drafting legal-style documents">
+<span class="num">57</span>
+<div><h3>Affidavit / Undertaking Drafting</h3><p>Legal-style documents</p></div></div>
+<div class="card" data-search="business proposal writing win clients with powerful words">
+<span class="num">58</span>
+<div><h3>Business Proposal Writing</h3><p>Win clients with powerful words</p></div></div>
+<div class="card" data-search="company profile writing corporate storytelling">
+<span class="num">59</span>
+<div><h3>Company Profile Writing</h3><p>Corporate storytelling</p></div></div>
+<div class="card" data-search="tender document preparation complete bid preparation">
+<span class="num">60</span>
+<div><h3>Tender Document Preparation</h3><p>Complete bid preparation</p></div></div>
+<div class="card" data-search="sop / manual writing clear process documentation">
+<span class="num">61</span>
+<div><h3>SOP / Manual Writing</h3><p>Clear process documentation</p></div></div>
+<div class="card" data-search="application writing leave, resignation and more">
+<span class="num">62</span>
+<div><h3>Application Writing</h3><p>Leave, resignation and more</p></div></div>
+</div></section>
+<section class="cat" id="cat-07">
+<div class="cat-head reveal"><span class="ghost">07</span>
+<div><span class="kicker">CATEGORY 07</span><h2>BUSINESS DESIGN</h2>
+<span class="count">12 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="letterhead design branded official stationery">
+<span class="num">63</span>
+<div><h3>Letterhead Design</h3><p>Branded official stationery</p></div></div>
+<div class="card" data-search="business card design a first impression that sticks">
+<span class="num">64</span>
+<div><h3>Business Card Design</h3><p>A first impression that sticks</p></div></div>
+<div class="card" data-search="logo design a unique mark for your brand">
+<span class="num">65</span>
+<div><h3>Logo Design</h3><p>A unique mark for your brand</p></div></div>
+<div class="card" data-search="flyer / poster design promotions that grab attention">
+<span class="num">66</span>
+<div><h3>Flyer / Poster Design</h3><p>Promotions that grab attention</p></div></div>
+<div class="card" data-search="brochure / company profile premium print design">
+<span class="num">67</span>
+<div><h3>Brochure / Company Profile</h3><p>Premium print design</p></div></div>
+<div class="card" data-search="shadi invitation card elegant event cards">
+<span class="num">68</span>
+<div><h3>Shadi Invitation Card</h3><p>Elegant event cards</p></div></div>
+<div class="card" data-search="social media posts (pack of 10) 10 branded post designs">
+<span class="num">69</span>
+<div><h3>Social Media Posts (Pack of 10)</h3><p>10 branded post designs</p></div></div>
+<div class="card" data-search="business starter pack logo, letterhead, card and invoice">
+<span class="num">70</span>
+<div><h3>Business Starter Pack</h3><p>Logo, letterhead, card and invoice</p></div></div>
+<div class="card" data-search="envelope design matching branded envelopes">
+<span class="num">71</span>
+<div><h3>Envelope Design</h3><p>Matching branded envelopes</p></div></div>
+<div class="card" data-search="stamp / seal design your official business stamp">
+<span class="num">72</span>
+<div><h3>Stamp / Seal Design</h3><p>Your official business stamp</p></div></div>
+<div class="card" data-search="invoice / receipt book professional billing design">
+<span class="num">73</span>
+<div><h3>Invoice / Receipt Book</h3><p>Professional billing design</p></div></div>
+<div class="card" data-search="staff id card secure office id design">
+<span class="num">74</span>
+<div><h3>Staff ID Card</h3><p>Secure office ID design</p></div></div>
+</div></section>
+<section class="cat" id="cat-08">
+<div class="cat-head reveal"><span class="ghost">08</span>
+<div><span class="kicker">CATEGORY 08</span><h2>WORD / EXCEL / PPT</h2>
+<span class="count">15 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="word / excel fix formatting and formula fixes">
+<span class="num">75</span>
+<div><h3>Word / Excel Fix</h3><p>Formatting and formula fixes</p></div></div>
+<div class="card" data-search="excel report / dashboard reports that impress management">
+<span class="num">76</span>
+<div><h3>Excel Report / Dashboard</h3><p>Reports that impress management</p></div></div>
+<div class="card" data-search="ppt design (10 slides) 10 stunning presentation slides">
+<span class="num">77</span>
+<div><h3>PPT Design (10 Slides)</h3><p>10 stunning presentation slides</p></div></div>
+<div class="card" data-search="data entry / cleanup clean and organized data">
+<span class="num">78</span>
+<div><h3>Data Entry / Cleanup</h3><p>Clean and organized data</p></div></div>
+<div class="card" data-search="mail merge bulk letters and certificates">
+<span class="num">79</span>
+<div><h3>Mail Merge</h3><p>Bulk letters and certificates</p></div></div>
+<div class="card" data-search="school certificate official certificate design">
+<span class="num">80</span>
+<div><h3>School Certificate</h3><p>Official certificate design</p></div></div>
+<div class="card" data-search="salary slip template payroll-ready format">
+<span class="num">81</span>
+<div><h3>Salary Slip Template</h3><p>Payroll-ready format</p></div></div>
+<div class="card" data-search="mark sheet / result system complete school result management">
+<span class="num">82</span>
+<div><h3>Mark Sheet / Result System</h3><p>Complete school result management</p></div></div>
+<div class="card" data-search="fee record system smart school fee tracking">
+<span class="num">83</span>
+<div><h3>Fee Record System</h3><p>Smart school fee tracking</p></div></div>
+<div class="card" data-search="attendance register intelligent attendance sheets">
+<span class="num">84</span>
+<div><h3>Attendance Register</h3><p>Intelligent attendance sheets</p></div></div>
+<div class="card" data-search="invoice tracker never miss a payment again">
+<span class="num">85</span>
+<div><h3>Invoice Tracker</h3><p>Never miss a payment again</p></div></div>
+<div class="card" data-search="custom excel formulas pack custom automation formulas">
+<span class="num">86</span>
+<div><h3>Custom Excel Formulas Pack</h3><p>Custom automation formulas</p></div></div>
+<div class="card" data-search="word custom template reusable branded template">
+<span class="num">87</span>
+<div><h3>Word Custom Template</h3><p>Reusable branded template</p></div></div>
+<div class="card" data-search="ppt master template consistent slide design system">
+<span class="num">88</span>
+<div><h3>PPT Master Template</h3><p>Consistent slide design system</p></div></div>
+<div class="card" data-search="excel-to-pdf automation one-click professional reporting">
+<span class="num">89</span>
+<div><h3>Excel-to-PDF Automation</h3><p>One-click professional reporting</p></div></div>
+</div></section>
+<section class="cat" id="cat-09">
+<div class="cat-head reveal"><span class="ghost">09</span>
+<div><span class="kicker">CATEGORY 09</span><h2>PHOTO SERVICES</h2>
+<span class="count">3 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="old photo restore bring precious memories back to life">
+<span class="num">90</span>
+<div><h3>Old Photo Restore</h3><p>Bring precious memories back to life</p></div></div>
+<div class="card" data-search="background remove clean professional product photos">
+<span class="num">91</span>
+<div><h3>Background Remove</h3><p>Clean professional product photos</p></div></div>
+<div class="card" data-search="passport / id photo official-size photos, perfect finish">
+<span class="num">92</span>
+<div><h3>Passport / ID Photo</h3><p>Official-size photos, perfect finish</p></div></div>
+</div></section>
+<section class="cat" id="cat-10">
+<div class="cat-head reveal"><span class="ghost">10</span>
+<div><span class="kicker">CATEGORY 10</span><h2>VIDEO EDITING</h2>
+<span class="count">1 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="shadi / event video editing weddings and events, cinematic cut">
+<span class="num">93</span>
+<div><h3>Shadi / Event Video Editing</h3><p>Weddings and events, cinematic cut</p></div></div>
+</div></section>
+<section class="cat" id="cat-11">
+<div class="cat-head reveal"><span class="ghost">11</span>
+<div><span class="kicker">CATEGORY 11</span><h2>VOICEOVER</h2>
+<span class="count">9 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="1-minute voiceover short narrations, crisp studio sound">
+<span class="num">94</span>
+<div><h3>1-Minute Voiceover</h3><p>Short narrations, crisp studio sound</p></div></div>
+<div class="card" data-search="5-minute voiceover story and video narration">
+<span class="num">95</span>
+<div><h3>5-Minute Voiceover</h3><p>Story and video narration</p></div></div>
+<div class="card" data-search="10-minute voiceover full episode voiceover">
+<span class="num">96</span>
+<div><h3>10-Minute Voiceover</h3><p>Full episode voiceover</p></div></div>
+<div class="card" data-search="10+ minute voiceover series and long-form projects">
+<span class="num">97</span>
+<div><h3>10+ Minute Voiceover</h3><p>Series and long-form projects</p></div></div>
+<div class="card" data-search="ivr / phone greeting professional business welcome message">
+<span class="num">98</span>
+<div><h3>IVR / Phone Greeting</h3><p>Professional business welcome message</p></div></div>
+<div class="card" data-search="ad voiceover (30–60 sec) commercials that sell">
+<span class="num">99</span>
+<div><h3>Ad Voiceover (30–60 sec)</h3><p>Commercials that sell</p></div></div>
+<div class="card" data-search="podcast intro / outro signature sound for your show">
+<span class="num">100</span>
+<div><h3>Podcast Intro / Outro</h3><p>Signature sound for your show</p></div></div>
+<div class="card" data-search="documentary narration authoritative storytelling voice">
+<span class="num">101</span>
+<div><h3>Documentary Narration</h3><p>Authoritative storytelling voice</p></div></div>
+<div class="card" data-search="audiobook narration long-form narration">
+<span class="num">102</span>
+<div><h3>Audiobook Narration</h3><p>Long-form narration</p></div></div>
+</div></section>
+<section class="cat" id="cat-12">
+<div class="cat-head reveal"><span class="ghost">12</span>
+<div><span class="kicker">CATEGORY 12</span><h2>FACELESS YOUTUBE VIDEO</h2>
+<span class="count">3 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="short video (under 60 sec) ready to upload">
+<span class="num">103</span>
+<div><h3>Short Video (under 60 sec)</h3><p>Ready to upload</p></div></div>
+<div class="card" data-search="standard video (3–6 min) cinematic story video">
+<span class="num">104</span>
+<div><h3>Standard Video (3–6 min)</h3><p>Cinematic story video</p></div></div>
+<div class="card" data-search="long video (6–10 min) premium episode">
+<span class="num">105</span>
+<div><h3>Long Video (6–10 min)</h3><p>Premium episode</p></div></div>
+</div></section>
+<section class="cat" id="cat-13">
+<div class="cat-head reveal"><span class="ghost">13</span>
+<div><span class="kicker">CATEGORY 13</span><h2>SHORTS / REELS</h2>
+<span class="count">2 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="10 shorts / reels pack vertical clips with captions">
+<span class="num">106</span>
+<div><h3>10 Shorts / Reels Pack</h3><p>Vertical clips with captions</p></div></div>
+<div class="card" data-search="30 shorts / reels pack one month of daily shorts">
+<span class="num">107</span>
+<div><h3>30 Shorts / Reels Pack</h3><p>One month of daily shorts</p></div></div>
+</div></section>
+<section class="cat" id="cat-14">
+<div class="cat-head reveal"><span class="ghost">14</span>
+<div><span class="kicker">CATEGORY 14</span><h2>THUMBNAIL DESIGN</h2>
+<span class="count">2 services</span></div></div>
+<div class="grid reveal"><div class="card" data-search="single thumbnail high-ctr custom design, 2 concepts">
+<span class="num">108</span>
+<div><h3>Single Thumbnail</h3><p>High-CTR custom design, 2 concepts</p></div></div>
+<div class="card" data-search="thumbnail pack of 5 consistent style for your series">
+<span class="num">109</span>
+<div><h3>Thumbnail Pack of 5</h3><p>Consistent style for your series</p></div></div>
+</div></section>
+
+<div class="nohit" id="nohit">No services match your search. Try another keyword — or <a href="mailto:technolojea@gmail.com" style="color:var(--gold)">ask us directly</a>.</div>
+
+<div class="product reveal">
+<span class="kicker">FEATURED PRODUCT</span>
+<h2>SheryDefence <span class="g">— Laptop Intruder Alert</span></h2>
+<p>Catches intruders with photo alerts sent straight to your Telegram. Wrong password, unlock or idle use — you get the photo instantly. $50 one-time.</p>
+<a class="btn btn-gold" href="https://wa.me/971562963390?text=I%20want%20SheryDefence" target="_blank" rel="noopener">Get SheryDefence</a>
+</div>
+
+<div class="steps">
+<h2>How It <span class="g">Works</span></h2>
+<div class="step-grid">
+<div class="step reveal"><b>01</b><h3>Tell us what you need</h3><p>Pick a service number from this menu and message us.</p></div>
+<div class="step reveal"><b>02</b><h3>Get a fixed quote</h3><p>Clear price and delivery date. No hidden charges.</p></div>
+<div class="step reveal"><b>03</b><h3>50% advance</h3><p>Work begins the moment you confirm.</p></div>
+<div class="step reveal"><b>04</b><h3>Receive &amp; revise</h3><p>Final files plus one free revision.</p></div>
+</div></div>
+</main>
+
+<div class="contact reveal"><div class="wrap">
+<span class="kicker">LET'S WORK TOGETHER</span>
+<h2>Pick a service number,<br><span class="g">and consider it done.</span></h2>
+<div class="row">
+<div class="cbox"><small>WHATSAPP</small><a href="https://wa.me/971562963390" target="_blank" rel="noopener">+971 56 296 3390</a></div>
+<div class="cbox"><small>EMAIL</small><a href="mailto:technolojea@gmail.com">technolojea@gmail.com</a></div>
+</div>
+<p class="trust">✓ 100% real work — no fake subs / views</p>
+</div></div>
+
+<footer>Technolojea — Real work. Real growth. © 2026</footer>
+
+<script>
+const q=document.getElementById('q'),cnt=document.getElementById('cnt'),nohit=document.getElementById('nohit');
+const cards=[...document.querySelectorAll('.card')];
+function upd(){cnt.textContent=q.value? '' : '109 services';}
+upd();
+q.addEventListener('input',()=>{
+  const t=q.value.trim().toLowerCase();let vis=0;
+  cards.forEach(c=>{const hit=!t||c.dataset.search.includes(t);c.classList.toggle('hide',!hit);if(hit)vis++;});
+  document.querySelectorAll('.cat').forEach(s=>{
+    const any=[...s.querySelectorAll('.card')].some(c=>!c.classList.contains('hide'));
+    s.style.display=any?'':'none';
+  });
+  nohit.style.display=vis?'none':'block';
+  cnt.textContent=t? vis+' found' : '109 services';
+});
+
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
