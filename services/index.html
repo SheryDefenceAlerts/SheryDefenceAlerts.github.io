@@ -89,6 +89,15 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filt
 .trust{color:var(--gold-lt);font-size:14px;margin-top:8px}
 footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px solid rgba(255,255,255,.06)}
 
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:30px auto;max-width:980px;text-align:left}
+.feat{background:rgba(255,255,255,.03);border:1px solid rgba(212,175,55,.18);border-radius:12px;padding:18px 20px;transition:.2s}
+.feat:hover{border-color:var(--gold);transform:translateY(-3px)}
+.feat b{display:block;color:#fff;font-size:14.5px;margin-bottom:4px}
+.feat span{color:var(--mut);font-size:13px}
+.price-row{margin:8px 0 24px}
+.price{font-family:'Playfair Display',serif;font-size:46px;color:var(--gold);font-weight:800}
+.per{color:var(--mut);font-size:14px;margin-left:10px}
+.product .tag{color:var(--mut);max-width:640px;margin:14px auto 0;font-size:16px}
 /* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -148,6 +157,23 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 <div><b>14</b><span>CATEGORIES</span></div>
 <div><b>100%</b><span>REAL WORK</span></div>
 </div></div></header>
+<div class="product reveal" id="sherydefence">
+<span class="kicker">FEATURED PRODUCT</span>
+<h2>SheryDefence <span class="g">— Laptop Intruder Alert System</span></h2>
+<p class="tag">The moment someone touches your laptop without permission, you know — with photo, video and location, straight to your phone.</p>
+<div class="feat-grid">
+<div class="feat reveal"><b>🛡️ Triple-Shield Alerts</b><span>Photo on every wrong password, unlock &amp; idle use</span></div>
+<div class="feat reveal"><b>🔊 Instant Deterrence</b><span>Voice warning, siren alarm &amp; fake crash screen</span></div>
+<div class="feat reveal"><b>📸 Silent Evidence</b><span>Photos, 10-sec video, screenshots, audio recording</span></div>
+<div class="feat reveal"><b>📱 Remote Control</b><span>7 Telegram commands — /photo /lock /alarm &amp; more</span></div>
+<div class="feat reveal"><b>📍 Live Location</b><span>Google Maps link with every intruder alert</span></div>
+<div class="feat reveal"><b>⚡ 2-Minute Setup</b><span>No tech skills needed — Windows app</span></div>
+</div>
+<div class="price-row"><span class="price">$50</span><span class="per">one-time · yours forever</span></div>
+<a class="btn btn-gold" href="https://wa.me/971562963390?text=I%20want%20SheryDefence" target="_blank" rel="noopener">Get SheryDefence</a>
+</div>
+
+
 
 <div class="searchbar"><div class="wrap">
 <input id="q" type="search" placeholder="Search 109 services…  (e.g. SEO, thumbnail, CV)" autocomplete="off">
@@ -555,12 +581,7 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 
 <div class="nohit" id="nohit">No services match your search. Try another keyword — or <a href="mailto:technolojea@gmail.com" style="color:var(--gold)">ask us directly</a>.</div>
 
-<div class="product reveal" id="sherydefence">
-<span class="kicker">FEATURED PRODUCT</span>
-<h2>SheryDefence <span class="g">— Laptop Intruder Alert</span></h2>
-<p>Catches intruders with photo alerts sent straight to your Telegram. Wrong password, unlock or idle use — you get the photo instantly. $50 one-time.</p>
-<a class="btn btn-gold" href="https://wa.me/971562963390?text=I%20want%20SheryDefence" target="_blank" rel="noopener">Get SheryDefence</a>
-</div>
+
 
 <div class="steps">
 <h2>How It <span class="g">Works</span></h2>
