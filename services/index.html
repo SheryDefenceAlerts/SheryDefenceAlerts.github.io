@@ -17,8 +17,10 @@ h1,h2,.serif{font-family:'Playfair Display',serif}
 nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;gap:16px;padding:14px 12px 14px 6px;max-width:1180px;margin:0 auto}
 .brand{font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--gold);letter-spacing:2px;white-space:nowrap;text-decoration:none}
-.nav-links{display:flex;gap:6px;overflow-x:auto;flex:1;align-items:center;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 94%,transparent);mask-image:linear-gradient(to right,#000 94%,transparent)}
-.nav-links::-webkit-scrollbar{display:none}
+.nav-links{display:flex;gap:6px;overflow-x:auto;flex:1;align-items:center;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(212,175,55,.12);padding-bottom:8px}
+.nav-links::-webkit-scrollbar{height:5px;display:block}
+.nav-links::-webkit-scrollbar-track{background:rgba(212,175,55,.12);border-radius:3px}
+.nav-links::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
 .nav-links a{color:var(--mut);text-decoration:none;font-size:12px;font-weight:500;padding:8px 14px;white-space:nowrap;border-radius:20px;border:1px solid transparent;display:inline-flex;align-items:center;gap:7px;line-height:1;transition:.2s}
 .nav-links a .n{color:var(--gold);font-size:10px;font-weight:700;opacity:.75}
 .nav-links a:hover{color:var(--gold);border-color:var(--line);background:rgba(212,175,55,.08)}
