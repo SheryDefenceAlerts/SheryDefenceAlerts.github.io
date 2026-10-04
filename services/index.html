@@ -15,17 +15,15 @@ h1,h2,.serif{font-family:'Playfair Display',serif}
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
 /* NAV */
 nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;gap:26px;padding:14px 22px;max-width:1180px;margin:0 auto}
+.nav-in{display:flex;align-items:center;gap:16px;padding:14px 12px 14px 6px;max-width:1180px;margin:0 auto}
 .brand{font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--gold);letter-spacing:2px;white-space:nowrap;text-decoration:none}
-.nav-links::-webkit-scrollbar{height:5px;display:block}
-.nav-links::-webkit-scrollbar-track{background:rgba(212,175,55,.12);border-radius:3px}
-.nav-links::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
-.nav-links{display:flex;gap:6px;overflow-x:auto;flex:1;align-items:center;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(212,175,55,.12);padding-bottom:8px}
+.nav-links{display:flex;gap:6px;overflow-x:auto;flex:1;align-items:center;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 94%,transparent);mask-image:linear-gradient(to right,#000 94%,transparent)}
+.nav-links::-webkit-scrollbar{display:none}
 .nav-links a{color:var(--mut);text-decoration:none;font-size:12px;font-weight:500;padding:8px 14px;white-space:nowrap;border-radius:20px;border:1px solid transparent;display:inline-flex;align-items:center;gap:7px;line-height:1;transition:.2s}
 .nav-links a .n{color:var(--gold);font-size:10px;font-weight:700;opacity:.75}
 .nav-links a:hover{color:var(--gold);border-color:var(--line);background:rgba(212,175,55,.08)}
-.nav-links a.nav-cta{background:var(--gold);color:#111!important;font-weight:700;border-color:var(--gold)}
-.nav-links a.nav-cta:hover{background:#e5c04a;color:#111!important}
+.nav-cta-top{flex-shrink:0;background:var(--gold);color:#111!important;font-weight:700;font-size:12px;padding:9px 18px;border-radius:20px;text-decoration:none;white-space:nowrap;transition:.2s}
+.nav-cta-top:hover{background:#e5c04a;transform:translateY(-1px)}
 .nav-links a:hover{color:var(--gold);background:rgba(212,175,55,.08)}
 /* HERO */
 .hero{text-align:center;padding:96px 22px 70px;position:relative;overflow:hidden}
@@ -150,8 +148,8 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 <a href="#cat-12"><span class="n">12</span>Faceless YouTube Video</a>
 <a href="#cat-13"><span class="n">13</span>Shorts / Reels</a>
 <a href="#cat-14"><span class="n">14</span>Thumbnail Design</a>
-<a href="#sherydefence" class="nav-cta">🛡️ SheryDefence</a>
 </div>
+<a href="#sherydefence" class="nav-cta-top">🛡️ SheryDefence</a>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
