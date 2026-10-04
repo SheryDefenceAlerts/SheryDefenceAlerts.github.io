@@ -17,9 +17,13 @@ h1,h2,.serif{font-family:'Playfair Display',serif}
 nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;gap:26px;padding:14px 22px;max-width:1180px;margin:0 auto}
 .brand{font-family:'Playfair Display',serif;font-weight:800;font-size:20px;color:var(--gold);letter-spacing:2px;white-space:nowrap;text-decoration:none}
-.nav-links{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
 .nav-links::-webkit-scrollbar{display:none}
-.nav-links a{color:var(--mut);text-decoration:none;font-size:12.5px;padding:8px 10px;white-space:nowrap;border-radius:6px}
+.nav-links{display:flex;gap:6px;overflow-x:auto;flex:1;scrollbar-width:none;align-items:center}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:12px;font-weight:500;padding:8px 14px;white-space:nowrap;border-radius:20px;border:1px solid transparent;display:inline-flex;align-items:center;gap:7px;line-height:1;transition:.2s}
+.nav-links a .n{color:var(--gold);font-size:10px;font-weight:700;opacity:.75}
+.nav-links a:hover{color:var(--gold);border-color:var(--line);background:rgba(212,175,55,.08)}
+.nav-links a.nav-cta{background:var(--gold);color:#111!important;font-weight:700;border-color:var(--gold)}
+.nav-links a.nav-cta:hover{background:#e5c04a;color:#111!important}
 .nav-links a:hover{color:var(--gold);background:rgba(212,175,55,.08)}
 /* HERO */
 .hero{text-align:center;padding:96px 22px 70px;position:relative;overflow:hidden}
@@ -129,22 +133,23 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 <body>
 <nav><div class="nav-in">
 <a class="brand" href="#top">ZENTRA GADGETS</a>
-<div class="nav-links"><a href="#cat-01">Branding & Seo</a>
-<a href="#cat-02">Seo</a>
-<a href="#cat-03">Audit & Strategy</a>
-<a href="#cat-04">Website & Online</a>
-<a href="#cat-05">Full Packages</a>
-<a href="#cat-06">Document Services</a>
-<a href="#cat-07">Business Design</a>
-<a href="#cat-08">Word / Excel / Ppt</a>
-<a href="#cat-09">Photo Services</a>
-<a href="#cat-10">Video Editing</a>
-<a href="#cat-11">Voiceover</a>
-<a href="#cat-12">Faceless Youtube Video</a>
-<a href="#cat-13">Shorts / Reels</a>
-<a href="#cat-14">Thumbnail Design</a>
+<div class="nav-links">
+<a href="#cat-01"><span class="n">01</span>Branding & SEO</a>
+<a href="#cat-02"><span class="n">02</span>SEO</a>
+<a href="#cat-03"><span class="n">03</span>Audit & Strategy</a>
+<a href="#cat-04"><span class="n">04</span>Website & Online</a>
+<a href="#cat-05"><span class="n">05</span>Full Packages</a>
+<a href="#cat-06"><span class="n">06</span>Document Services</a>
+<a href="#cat-07"><span class="n">07</span>Business Design</a>
+<a href="#cat-08"><span class="n">08</span>Word / Excel / PPT</a>
+<a href="#cat-09"><span class="n">09</span>Photo Services</a>
+<a href="#cat-10"><span class="n">10</span>Video Editing</a>
+<a href="#cat-11"><span class="n">11</span>Voiceover</a>
+<a href="#cat-12"><span class="n">12</span>Faceless YouTube Video</a>
+<a href="#cat-13"><span class="n">13</span>Shorts / Reels</a>
+<a href="#cat-14"><span class="n">14</span>Thumbnail Design</a>
+<a href="#sherydefence" class="nav-cta">🛡️ SheryDefence</a>
 </div>
-<a href="#sherydefence" style="color:var(--gold);font-weight:700">🛡️ SheryDefence</a>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
@@ -162,6 +167,7 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 <div><b>14</b><span>CATEGORIES</span></div>
 <div><b>100%</b><span>REAL WORK</span></div>
 </div></div></header>
+<div class="wrap">
 <div class="product reveal" id="sherydefence">
 <span class="kicker">FEATURED PRODUCT</span>
 <h2>SheryDefence <span class="g">— Laptop Intruder Alert System</span></h2>
@@ -177,6 +183,7 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 </div>
 <div class="price-row"><span class="price">$50</span><span class="per">one-time · yours forever</span></div>
 <a class="btn btn-gold" href="https://wa.me/971562963390?text=I%20want%20SheryDefence" target="_blank" rel="noopener">Get SheryDefence</a>
+</div>
 </div>
 
 
