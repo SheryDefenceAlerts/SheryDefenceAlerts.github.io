@@ -24,22 +24,20 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filt
 .nav-links a{color:var(--mut);text-decoration:none;font-size:12px;font-weight:500;padding:8px 14px;white-space:nowrap;border-radius:20px;border:1px solid transparent;display:inline-flex;align-items:center;gap:7px;line-height:1;transition:.2s}
 .nav-links a .n{color:var(--gold);font-size:10px;font-weight:700;opacity:.75}
 .nav-links a:hover{color:var(--gold);border-color:var(--line);background:rgba(212,175,55,.08)}
-.nav-cta-top{flex-shrink:0;background:var(--gold);color:#111!important;font-weight:700;font-size:12px;padding:9px 18px;border-radius:20px;text-decoration:none;white-space:nowrap;transition:.2s}
-.nav-cta-top:hover{background:#e5c04a;transform:translateY(-1px)}
+.nav-cta-top{flex-shrink:0;font-family:'Playfair Display',serif;font-weight:700;font-size:15px;letter-spacing:2px;color:var(--gold)!important;text-decoration:none;white-space:nowrap;transition:.2s}
+.nav-cta-top:hover{color:#e8c95c!important}
 .nav-links a:hover{color:var(--gold);background:rgba(212,175,55,.08)}
 /* HERO */
 .hero{text-align:center;padding:96px 22px 70px;position:relative;overflow:hidden}
 .hero .wrap{position:relative;z-index:1}
 @media(min-width:901px){.hero .wrap{max-width:none;padding-left:24vw;padding-right:24vw}}
-.hero-img{position:absolute;top:50%;width:min(440px,25vw);border-radius:18px;z-index:0;opacity:.95;filter:drop-shadow(0 0 45px rgba(64,160,200,.22));animation:floaty 7s ease-in-out infinite}
+.hero-img{position:absolute;top:50%;width:min(440px,25vw);border-radius:18px;z-index:0;opacity:0;transition:opacity .9s ease;filter:drop-shadow(0 0 45px rgba(64,160,200,.22));animation:floaty 7s ease-in-out infinite}
 .hero-img.left{left:2%}
 .hero-img.right{right:2%;animation-delay:3.5s}
+.hero.hero-ready .hero-img{opacity:.95}
 @keyframes floaty{0%,100%{transform:translateY(calc(-50% - 14px))}50%{transform:translateY(calc(-50% + 14px))}}
 @media(max-width:1100px){.hero-img{width:min(220px,20vw)}}
 @media(max-width:900px){.hero-img{display:none}}}
-.topbar{background:linear-gradient(90deg,#b8912f,#e8c95c,#b8912f);color:#1a1405;text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.4px;padding:9px 16px;position:relative;z-index:60}
-.topbar a{color:#1a1405;font-weight:800;text-decoration:underline;text-underline-offset:3px}
-.topbar b{font-weight:800}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 0%,rgba(212,175,55,.10),transparent 70%)}
 .dia{width:14px;height:14px;background:var(--gold);transform:rotate(45deg);margin:0 auto 26px}
 .kicker{color:var(--gold);letter-spacing:6px;font-size:12px;font-weight:600}
@@ -144,7 +142,6 @@ footer{text-align:center;padding:34px;color:#666;font-size:13px;border-top:1px s
 @media(max-width:640px){.nav-links{display:none}.hero{padding:70px 18px 50px}}
 </style></head>
 <body>
-<div class="topbar">✨ <b>109 Premium Services</b> under one roof — SEO · Video · Voiceover · Design &nbsp;<a href="https://wa.me/971562963390" target="_blank" rel="noopener">WhatsApp Us →</a></div>
 <nav><div class="nav-in">
 <a class="brand" href="#top">ZENTRA GADGETS</a>
 <div class="nav-links">
@@ -659,4 +656,5 @@ q.addEventListener('input',()=>{
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<script>(function(){var h=document.querySelector(".hero");if(!h)return;var imgs=h.querySelectorAll(".hero-img");if(!imgs.length){h.classList.add("hero-ready");return;}var n=0;function show(){if(++n>=imgs.length)h.classList.add("hero-ready");}imgs.forEach(function(im){if(im.complete&&im.naturalWidth)show();else{im.addEventListener("load",show);im.addEventListener("error",show);}});setTimeout(function(){h.classList.add("hero-ready")},2500);})();</script>
 </body></html>
