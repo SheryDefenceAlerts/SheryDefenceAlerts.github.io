@@ -44,7 +44,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filt
 .topbar::before,.topbar::after{content:"";position:absolute;left:0;right:0;height:5px;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.22) 0 10px,transparent 10px 22px)}
 .topbar::before{top:4px}.topbar::after{bottom:4px}
 .ticker span{text-shadow:0 0 14px rgba(255,255,255,.4)}
-.ticker{display:inline-flex;white-space:nowrap;animation:tick 14s linear infinite;will-change:transform;font-family:'Playfair Display',serif;font-weight:700}
+.ticker{display:inline-flex;white-space:nowrap;animation:tick 14s linear infinite;;font-family:'Playfair Display',serif;font-weight:700}
 .topbar:hover .ticker{animation-play-state:paused}
 @keyframes tick{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .topbar a{color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px}
@@ -54,7 +54,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.94);backdrop-filt
 .hero{text-align:center;padding:96px 22px 70px;position:relative;overflow:hidden}
 .hero .wrap{position:relative;z-index:1}
 @media(min-width:901px){.hero .wrap{max-width:none;padding-left:24vw;padding-right:24vw}}
-.hero-img{position:absolute;top:44%;width:min(440px,25vw);border-radius:18px;z-index:0;opacity:0;transition:opacity .9s ease;filter:drop-shadow(0 0 45px rgba(64,160,200,.22));animation:floaty 7s ease-in-out infinite;animation-fill-mode:both}
+.hero-img{position:absolute;top:44%;width:min(440px,25vw);border-radius:18px;z-index:0;opacity:0;transition:opacity .9s ease;filter:none;animation:floaty 7s ease-in-out infinite;animation-fill-mode:both}
 .hero-img.left{left:2%}
 .hero-img.right{right:2%;animation-delay:3.5s}
 .hero.hero-ready .hero-img{opacity:.95}
