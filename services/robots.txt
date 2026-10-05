@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sherydefencealerts.github.io/services/sitemap.xml
